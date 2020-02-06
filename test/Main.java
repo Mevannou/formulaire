@@ -22,17 +22,25 @@ public class Main {
     panel.setBackground(Color.WHITE);
     panel.add(new JButton("Click me"));
     
-    JButton clickme = new JButton();
-    clickme.setText("Click meee");
-    clickme.setBounds(600, 600, 50, 70);
-    clickme.setBackground(Color.LIGHT_GRAY);
-    clickme.setFont(new Font("Arial",Font.ITALIC,20));
-    clickme.setForeground(Color.RED);
-    panel.add(clickme);
+     
+    panel.add(getButton("3"));
+    panel.add(getButton("34"));
+
     frame.setVisible(true);
     
     
-    
+	}
+	
+	public static JButton getButton(String txt) {
+		JButton clickme = new JButton();
+	    clickme.setText(txt);
+	    clickme.setBounds(600, 600, 50, 70);
+	    clickme.setBackground(Color.LIGHT_GRAY);
+	    clickme.setFont(new Font("Arial",Font.ITALIC,20));
+	    clickme.setForeground(Color.RED);
+	    
+	    return clickme;
+	    
 	}
 
 }
